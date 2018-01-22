@@ -1,0 +1,82 @@
+h1 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    color: blue;
+
+}
+
+a:hover {
+
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+
+}
+
+body {
+
+    width: 900px;
+    margin:5px auto;
+    padding: 5px;
+    border: solid blue;
+
+}
+
+h2 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+pre {
+
+    font-family: Courier New, Courier, monospace;
+
+}
+
+a:hover {
+
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+
+}
+
+body {
+
+    width: 900px;
+    margin:5px auto;
+    padding: 5px;
+    border: 5px solid blue;
+}
+
+h2 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+pre {
+
+    font-family: Courier New, Courier, monospace;
+
+}
+
+a:hover {
+
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+
+}
+
+body {
+
+    width: 900px;
+    margin:5px auto;
+    padding: 5px;
+    border: 5px solid blue;
+}
