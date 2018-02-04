@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Script</title>
+</head>
+<body>
+
+    <script>
+        
+        function multiply() {
+
+            var color_td;
+            document.write("<table border = '1px'>");
+
+                for(var k=1; k<11; k++) {
+
+                    document.write("<tr style = 'height: 30px;'>");
+
+                        for(var i=1; i<11; i++) {
+
+                            if(k == 1 || i == 1) {
+
+                                color_td: "#ccc";
+
+                            } else {
+
+                                color_td: "#fff";
+
+                            }
+
+                            document.write("<td style = 'width: 30px; background-color:" + color_td + "'>" + k * i + "</td>");
+
+                        }
+
+                        document.write("</tr>");
+
+                }
+
+                document.write("</table>");
+
+        }
+        
+        multiply();
+        
+        </script>
+    
+</body>
+</html>
