@@ -1,0 +1,16 @@
+/* Innanför body valde jag bara att ha en annan bakgrunds färg */
+
+body {
+
+background-color: black;
+
+}
+
+/* Innanför input valde jag bara att ha en annan typ av font stil 
+för mina siffror på räknaren */
+
+input {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inlämningsuppgift 2 Del 2</title>
+    <link rel="stylesheet" href="calcstyle.css"> <!-- Anropar min css fil här -->
+</head>
+<body>
+
+    <!-- Min tag för att kunna använda textfält i browser, nödvändig
+         för att kunna ha något att visa inmatade värden samt resultat i. -->
+
+    <form name="calculator"> 
+
+        <!-- Inom denna tag anger jag namnet för min output, nödvändig
+             för att kunna utnyttja senare för att kunna ha möjlighet att
+             visa resultat för följande operationer som användaren utför. -->
+
+        <input name="output"/> <br /> <br /> 
+
+        <!-- Här nedan skapar jag mina knappar och namnger dom.
+             Namnger även mina funktioner i onclick som kommer att användas senare i koden.
+             Jag använder även br tags för att kunna byta rad på knapparna så att jag
+             får mer struktur i designen. -->
+
+        <input type="button" value="1" onclick="run1()"/>
+        <input type="button" value="2" onclick="run2()"/>
+        <input type="button" value="3" onclick="run3()"/>
+        <input type="button" value="+" onclick="runAdd()"/>
+
+        <br />
+
+        <input type="button" value="4" name="4" onclick="run4()"/>
+        <input type="button" value="5" name="5" onclick="run5()"/>
+        <input type="button" value="6" name="6" onclick="run6()"/>
+        <input type="button" value="-" name="-" onclick="runSub()"/>
+
+        <br />
+
+        <input type="button" value="7" name="7" onclick="run7()"/>
+        <input type="button" value="8" name="8" onclick="run8()"/>
+        <input type="button" value="9" name="9" onclick="run9()"/>
+        <input type="button" value="/" name="/" onclick="runDiv()"/>
+
+        <br />
+
+        <input type="button" value="0" name="0" onclick="run0()"/>
+        <input type="button" value="," name="," onclick="runDec()"/>
+        <input type="button" value="*" name="*" onclick="runMulti()"/>
+
+        <br />
+
+        <input type="button" value="C" name="C" onclick="runClear()"/>
+        <input type="button" value="=" name="=" onclick="runEquals()"/>
+
+    </form>
+    
+<script>
+    
+    /* Skapar min variabel och döper den till answer och lägger i den
+       en funktion */
+
+    var answer = document.calculator.output.value 
+
+    /* Här nedan har jag byggt en konstruktor, där jag anropar mina funktioner
+       för mina knappar ovan inkluderat min funktion som ligger i answer varabeln,
+       som är nödvändig för att kunna ange värdet på den knappen användaren trycker in
+       och därefter gör funktionen så att tecknet på knappen kan visas i textfältet i browsern. */
+
+    function run1() 
+        {document.calculator.output.value += "1";}
+    function run2()
+        {document.calculator.output.value += "2";}
+    function run3()
+        {document.calculator.output.value += "3";}
+    function runAdd()
+        {document.calculator.output.value += "+";}
+
+    function run4()
+        {document.calculator.output.value += "4";}
+    function run5()
+        {document.calculator.output.value += "5";}
+    function run6()
+        {document.calculator.output.value += "6";}
+    function runSub()
+        {document.calculator.output.value += "-";}
+
+    function run7()
+        {document.calculator.output.value += "7";}
+    function run8()
+        {document.calculator.output.value += "8";}
+    function run9()
+        {document.calculator.output.value += "9";}
+    function runDiv()
+        {document.calculator.output.value += "/";}
+
+    function run0()
+        {document.calculator.output.value += "0";}
+    function runDec()
+        {document.calculator.output.value += ",";}
+    function runMulti() 
+        {document.calculator.output.value += "*";}
+
+    function runClear()
+        {document.calculator.output.value = "";}
+
+    /* Anropar min funktion här nedan kallad runEquals().
+       Nödvändig för att kunna visa det uträknade resultatet
+       i textfältet av den operation eller uträkning som användaren har utfört */
+        
+    function runEquals()
+    {
+    var equals = eval(document.calculator.output.value);
+    document.calculator.output.value = equals;
+    }
+    
+</script>
+
+</body>
+</html>
