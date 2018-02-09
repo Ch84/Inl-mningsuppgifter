@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problemlösning</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Anropar bootstrap filen för att kunna centrera rubrik -->
+
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+<body>
+
+        <div id="wrapper">
+
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand">
+                            <a>
+                                Meny
+                            </a>
+                        </li>
+                        <li>
+
+                            <!-- Anropar till min index html fil -->
+            
+                            <a href="index.html">Till Startsidan</a>
+            
+                        </li>
+                        <li>
+        
+                            <!-- Anropar till min datorservice html fil -->
+        
+                            <a href="Datorservice.html">Datorservice</a>
+        
+                        </li>
+                        <li>
+        
+                            <!-- Anropar till min felsökning html fil -->
+        
+                            <a href="Felsökning.html">Felsökning</a>
+        
+                        </li>
+        
+                        <li>
+
+                            <!-- Anropar till min problemlösning html fil -->
+        
+                            <a href="Problemlösning.html">Problemlösning</a>
+        
+                        </li>
+                        <li>
+
+                            <!-- Anropar min installation html fil -->
+
+                            <a href="Installation.html">Installation</a>
+
+                        </li>
+                        <li>
+
+                            <!-- Anropar min säkerhetskopieringar html fil -->
+            
+                            <a href="Säkerhetskopieringar.html">Säkerhetskopieringar</a>
+            
+                        </li>
+                        <li>
+
+                            <!-- Anropar min virussökning html fil -->
+            
+                            <a href="Virussökning.html">Virussökning</a>
+            
+                        </li>
+                        <li>
+
+                            <!-- Anropar min kontakt html fil -->
+
+                            <a href="Kontakt.html">Kontakt</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- /#sidebar-wrapper -->
+        
+                <!-- Page Content -->
+                <div id="page-content-wrapper">
+                    <div class="container-fluid">
+                        <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Meny</a>
+
+                        <!-- Min översta rubrik -->
+
+                        <h1>Problemlösning</h1> <br>
+
+                        <!-- Min välkomst rubrik -->
+
+                        <h2>Välkommen till våran avdelning för problemlösning!</h2> <br>
+
+                        <!-- Mitt text innehåll på sidan -->
+                           
+                        <p>
+                           
+                           Behöver du en snabb problemlösning av din dator? <br><br>
+
+                           Våra tekniker hjälper dig gärna med det i så fall. <br><br>
+
+                           Beroende på problem så kan våra tekniker t.ex. hjälpa till med att: <br><br>
+
+                           <!-- En ordered list för lista upp vad vi hjälper till med -->
+
+                           <ol>
+
+                            <li>Kolla så alla komponenter är korrekt installerade och identifierade</li> <br>
+                            <li>Kolla prestanda på både mjuk och hårdvara</li> <br>
+                            <li>Köra en diagnos av drivrutiner</li> <br>
+                            <li>Kolla extern hårdvara t.ex. USB-enheter, högtalare, webbkamera e.t.c.</li> <br>
+
+                           </ol> 
+
+                           Listan kan göras lång. Oavsett problem så kommer våra tekniker absolut
+                           hjälpa dig att finna det. <br> <br>
+
+                           När våra tekniker sedan har identifierat problemet kommer dom att 
+                           ge dig råd för hur du kan göra för att lösa problemet. Visar det sig
+                           däremot att det är ett väldigt svårlösligt problem kan dom lösa det åt
+                           dig ifall det behövs. <br><br>
+
+                           Vi har följande drop in tider: <br><br>
+
+                           <!-- En unordered list för att lista upp våra drop in tider -->
+
+                            <ul>
+
+                                <li>10:00 - 12:00</li>
+                                <li>13:00 - 15:00</li>
+
+                            </ul>
+                            
+                           <!-- En sista under rubrik ifall användaren av sidan har övriga frågor --> 
+
+                           <h3>Har du övriga frågor?</h3> <br>
+
+                           Du är välkommen att kontakta oss. Du hittar kontaktuppgifter till oss 
+                           genom att klicka på Meny och sedan Kontakt.
+                           Du hittar även våra öppettider under kontakt.
+
+                        </p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!-- /#page-content-wrapper -->
+        
+            </div>
+            <!-- /#wrapper -->
+        
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+            <!-- Menu Toggle Script -->
+            <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            </script>
+    
+</body>
+</html>
